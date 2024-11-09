@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MyBooks"
+        android:textColor="@color/black"
+        android:id="@+id/label"
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        />
+
+    <ImageButton
+        android:id="@+id/filterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/filter_img"
+        android:background="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@id/label"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:focusable="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@id/label"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/addAuthorButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_account_box_24"
+            android:background="@color/white"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            />
+
+        <ImageButton
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_add_24"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/label"
+        />
+
+</RelativeLayout>

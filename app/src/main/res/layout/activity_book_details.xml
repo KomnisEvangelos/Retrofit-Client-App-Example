@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/white"
+    >
+
+
+    <TextView
+        android:id="@+id/titleLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleLabel"
+        android:layout_marginTop="8dp"
+        android:text="N/A"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/authorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView"
+        android:layout_marginTop="16dp"
+        android:text="Author:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/authorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorLabel"
+        android:layout_marginTop="8dp"
+        android:text="N/A"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/publicationDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/authorTextView"
+        android:layout_marginTop="16dp"
+        android:text="Publication Date:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/publicationDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publicationDateLabel"
+        android:layout_marginTop="8dp"
+        android:text="N/A"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/descrptionLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/publicationDateTextView"
+        android:layout_marginTop="16dp"
+        android:text="Book Descrption:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/descrptionTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descrptionLabel"
+        android:layout_marginTop="8dp"
+        android:text="N/A"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:id="@+id/openGoogleMaps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descrptionTextView"
+        android:layout_marginTop="8dp"
+        android:text="Open Author's Country "
+        android:textColor="@color/black"
+        android:textStyle="bold|italic"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
